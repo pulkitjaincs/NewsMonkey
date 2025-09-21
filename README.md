@@ -251,10 +251,6 @@ git commit -m "Add: your feature description"
 git push origin feature/your-feature-name
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 **Your Name**
@@ -268,8 +264,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ **Star this repository if you found it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/pulkitjaincs/newsapp?style=social)](https://github.com/pulkitjaincs/newsapp/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/pulkitjaincs/newsapp?style=social)](https://github.com/pulkitjaincs/newsapp/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/network/members)
 
 *Built with ❤️ using React*
 
