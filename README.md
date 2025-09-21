@@ -261,8 +261,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- 🌐 GitHub: [@yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- 🌐 GitHub: [@pulkitjaincs](https://github.com/pulkitjaincs)
+- 💼 LinkedIn: [@pulkitjaincs](https://linkedin.com/in/pulkitjaincs)
 - 📧 Email: your.email@example.com
 
 ---
@@ -271,8 +271,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ **Star this repository if you found it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/newsapp?style=social)](https://github.com/yourusername/newsapp/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/newsapp?style=social)](https://github.com/yourusername/newsapp/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/newsapp?style=social)](https://github.com/pulkitjaincs/newsapp/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/newsapp?style=social)](https://github.com/pulkitjaincs/newsapp/network/members)
 
 *Built with ❤️ using React*
 
