@@ -8,9 +8,6 @@
 
 > A modern, responsive news aggregation application built with React. Features infinite scroll, real-time loading indicators, and category-based news browsing.
 
-## 🌐 Live Demo
-
-**[🚀 View Live Application](https://pulkirjaincs.github.io/NewsMonkey)**
 
 ## ✨ Key Features
 
