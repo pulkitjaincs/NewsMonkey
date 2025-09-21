@@ -12,12 +12,6 @@
 
 **[🚀 View Live Application](https://pulkirjaincs.github.io/NewsMonkey)**
 
-## 📸 Screenshots
-
-| Desktop View | Mobile View |
-|--------------|-------------|
-| ![Desktop](https://via.placeholder.com/600x400/007bff/ffffff?text=Desktop+View) | ![Mobile](https://via.placeholder.com/300x400/28a745/ffffff?text=Mobile+View) |
-
 ## ✨ Key Features
 
 - **📱 Responsive Design**: Fully responsive layout that works seamlessly across all devices
