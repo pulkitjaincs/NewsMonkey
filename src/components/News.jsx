@@ -36,7 +36,12 @@ const News = (props) => {
       return;
     }
 
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+    let url;
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
+    } else {
+      url = `/api/news?country=${props.country}&category=${props.category}&page=${page}&pageSize=${props.pageSize}`;
+    }
     setLoading(true);
     setError(null);
     try {
@@ -78,7 +83,12 @@ const News = (props) => {
       return;
     }
 
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${nextPage}&pageSize=${props.pageSize}`;
+    let url;
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${nextPage}&pageSize=${props.pageSize}`;
+    } else {
+      url = `/api/news?country=${props.country}&category=${props.category}&page=${nextPage}&pageSize=${props.pageSize}`;
+    }
     setPage(nextPage);
     let data = await fetch(url);
     let parsedData = await data.json();
