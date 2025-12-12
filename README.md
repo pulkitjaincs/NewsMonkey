@@ -8,7 +8,6 @@
 
 > A modern, responsive news aggregation application built with React. Features infinite scroll, real-time loading indicators, and category-based news browsing.
 
-<<<<<<< HEAD
 ## 🌐 Live Demo
 
 **[🚀 View Live Application](https://pulkirjaincs.github.io/NewsMonkey)**
@@ -18,14 +17,11 @@
 | Desktop View | Mobile View |
 |--------------|-------------|
 | ![Desktop](https://via.placeholder.com/600x400/007bff/ffffff?text=Desktop+View) | ![Mobile](https://via.placeholder.com/300x400/28a745/ffffff?text=Mobile+View) |
-=======
->>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 
 ## ✨ Key Features
 
 - **📱 Responsive Design**: Fully responsive layout that works seamlessly across all devices
 - **🔄 Infinite Scroll**: Smooth infinite scrolling for seamless news browsing
-<<<<<<< HEAD
 - **⚡ Smart Caching**: Session-based caching to minimize API calls and ensure instant navigation
 - **🔖 Bookmarks**: "Read Later" functionality with persistent storage for your favorite articles
 - **🔗 Social Sharing**: Native sharing integration to easily share articles via WhatsApp, Twitter, etc.
@@ -33,13 +29,6 @@
 - **📂 Category Navigation**: Browse news by categories (Business, Technology, Sports, Science, Health, Entertainment)
 - **🌍 Multi-country Support**: Currently configured for Indian news with easy country switching
 - **🎨 Modern Premium UI**: Glassmorphism aesthetics, smooth animations, and polished typography
-=======
-- **⚡ Real-time Loading**: Dynamic loading bars and spinners for enhanced UX
-- **📂 Category Navigation**: Browse news by categories (Business, Technology, Sports, Science, Health, Entertainment)
-- **🌍 Multi-country Support**: Currently configured for Indian news with easy country switching
-- **🎨 Modern UI**: Clean, Bootstrap-powered interface with card-based news layout
-- **🔗 External Links**: Direct links to original news sources
->>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 - **📊 Progress Tracking**: Visual progress indicators during data fetching
 
 ## 🛠️ Tech Stack
@@ -52,7 +41,7 @@
 | **API** | NewsAPI.org |
 | **Infinite Scroll** | react-infinite-scroll-component |
 | **Loading UI** | react-top-loading-bar |
-| **Deployment** | GitHub Pages |
+| **Deployment** | GitHub Pages / Vercel |
 | **Package Manager** | npm |
 
 ## 🚀 Quick Start
@@ -66,26 +55,26 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/newsapp.git
-cd newsapp
+git clone https://github.com/pulkitjaincs/NewsMonkey.git
+cd NewsMonkey
 
 # Install dependencies
 npm install
 
 # Create environment file
-echo "REACT_APP_NEWS_API=your_api_key_here" > .env
+echo "VITE_NEWS_API=your_api_key_here" > .env
 
 # Start development server
-npm start
+npm run dev
 ```
 
 ### Available Scripts
 
 | Script | Description |
 |--------|-------------|
-| `npm start` | Runs the app in development mode |
+| `npm run dev` | Runs the app in development mode |
 | `npm run build` | Builds the app for production |
-| `npm test` | Launches the test runner |
+| `npm run preview` | Previews the production build |
 | `npm run deploy` | Deploys to GitHub Pages |
 
 ## 📁 Project Structure
@@ -97,126 +86,25 @@ newsapp/
 │   └── manifest.json
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.js          # Navigation with category dropdown
-│   │   ├── News.js            # Main news component with infinite scroll
-│   │   ├── NewsItem.js        # Individual news card component
-│   │   └── Spinner.js         # Loading spinner component
-│   ├── App.js                 # Main app component with routing
-│   ├── App.css               # Application styles
-│   ├── index.js              # Application entry point
-│   └── index.css             # Global styles
-├── package.json              # Dependencies and scripts
-└── README.md                 # Project documentation
-```
-
-## 🎯 Core Components
-
-### 📰 News Component
-```javascript
-// Main news component with infinite scroll
-const News = (props) => {
-  const [articles, setArticles] = useState([]);
-  const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(true);
-  
-  // Handles API calls to NewsAPI
-  // Implements infinite scroll functionality
-  // Manages loading states and progress tracking
-}
-```
-
-### 📄 NewsItem Component
-```javascript
-// Individual news card component
-const NewsItem = (props) => {
-  let { title, description, imgUrl, newsUrl, author, date } = props;
-  
-  // Displays articles in Bootstrap card format
-  // Handles missing images with fallback
-  // Formats publication dates
-}
-```
-
-### 🧭 Navbar Component
-```javascript
-// Responsive navigation component
-const Navbar = () => {
-  // Bootstrap-powered navigation
-  // Category dropdown for easy navigation
-  // Fixed positioning for better UX
-}
-```
-
-## ⚙️ Configuration
-
-### Environment Variables
-```env
-REACT_APP_NEWS_API=your_newsapi_key_here
-```
-
-### App Configuration
-```javascript
-// In App.js
-const pageSize = 10;           // Articles per page
-const country = 'in';          // Country code (in, us, gb, etc.)
-const category = 'general';    // News category
-```
-
-### Available Categories
-- `general` - General news
-- `business` - Business news  
-- `entertainment` - Entertainment news
-- `health` - Health news
-- `science` - Science news
-- `sports` - Sports news
-- `technology` - Technology news
-
-## 🌟 Key Features Implementation
-
-### 🔄 Infinite Scroll
-```javascript
-<InfiniteScroll
-  dataLength={articles.length}
-  next={fetchMoreData}
-  hasMore={articles.length !== totalArticles}
-  loader={<Spinner />}
->
-  <div className="container">
-    <div className="row">
-      {articles.map((article, index) => (
-        <div className="col-md-4" key={article.url + "-" + index}>
-          <NewsItem {...article} />
-        </div>
-      ))}
-    </div>
-  </div>
-</InfiniteScroll>
-```
-
-### 📊 Progress Tracking
-```javascript
-const updateNews = async () => {
-  props.setProgress(15);  // API call start
-  const data = await fetch(url);
-  props.setProgress(30);  // Data received
-  const parsedData = await data.json();
-  props.setProgress(65);  // Processing
-  setArticles(parsedData.articles);
-  props.setProgress(100); // Complete
-}
-```
-
-### 🎨 Responsive Design
-```javascript
-// Bootstrap responsive grid
-<div className="col-md-4">  // Desktop: 3 columns
-<div className="col-sm-6">   // Tablet: 2 columns  
-<div className="col-12">     // Mobile: 1 column
+│   │   ├── Navbar.jsx          # Navigation with category dropdown
+│   │   ├── News.jsx            # Main news component with infinite scroll
+│   │   ├── NewsItem.jsx        # Individual news card component
+│   │   ├── NewsModal.jsx       # Modal for detailed article view
+│   │   ├── SavedNews.jsx       # Bookmarked articles page
+│   │   └── Spinner.jsx         # Loading spinner component
+│   ├── context/
+│   │   ├── BookmarksContext.jsx # State management for bookmarks
+│   │   └── ThemeContext.jsx    # Theme toggle logic
+│   ├── App.jsx                 # Main app component with routing
+│   ├── App.css                 # Application styles
+│   ├── index.jsx               # Application entry point
+│   └── index.css               # Global styles
+├── package.json               # Dependencies and scripts
+└── README.md                  # Project documentation
 ```
 
 ## 🚀 Deployment
 
-<<<<<<< HEAD
 ### Vercel Deployment (Recommended)
 The easiest way to deploy is using Vercel:
 
@@ -234,30 +122,13 @@ The easiest way to deploy is using Vercel:
 npm run deploy
 ```
 
-=======
-### GitHub Pages Deployment
-```bash
-# Build and deploy to GitHub Pages
-npm run build
-npm run deploy
-```
-
-### Manual Deployment
-```bash
-# Build for production
-npm run build
-
-# Deploy build folder to your hosting service
-# Upload the contents of build/ folder to your web server
-```
-
->>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 ## 📈 Performance Optimizations
 
 | Optimization | Implementation |
 |-------------|----------------|
 | **Lazy Loading** | Images load as needed with fallbacks |
-| **State Management** | Minimal re-renders with proper state handling |
+| **Smart Caching** | Reduces API calls by caching session data |
+| **State Management** | Minimal re-renders with Context API |
 | **API Optimization** | Paginated requests to reduce load times |
 | **Responsive Images** | Optimized image handling with fallbacks |
 | **Code Splitting** | React Router for efficient bundle splitting |
@@ -265,15 +136,10 @@ npm run build
 ## 🔮 Roadmap
 
 - [ ] 🔍 Search functionality
-<<<<<<< HEAD
 - [x] 🌙 Dark mode toggle
 - [x] 📌 Bookmark/save articles
 - [x] ⚡ Smart Caching
 - [x] 🔗 Social Sharing
-=======
-- [ ] 🌙 Dark mode toggle
-- [ ] 📌 Bookmark/save articles
->>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 - [ ] ⚙️ User preferences
 - [ ] 🔔 Push notifications
 - [ ] 📱 Offline support with PWA
@@ -287,8 +153,8 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ### Quick Start for Contributors
 ```bash
 # Fork and clone the repository
-git clone https://github.com/yourusername/newsapp.git
-cd newsapp
+git clone https://github.com/pulkitjaincs/NewsMonkey.git
+cd NewsMonkey
 
 # Create a new branch
 git checkout -b feature/your-feature-name
@@ -300,25 +166,16 @@ git commit -m "Add: your feature description"
 git push origin feature/your-feature-name
 ```
 
-<<<<<<< HEAD
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
-**Your Name**
-- 🌐 GitHub: [@yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- 📧 Email: your.email@example.com
-=======
-## 👨‍💻 Author
-
-**Your Name**
+**Pulkit Jain**
 - 🌐 GitHub: [@pulkitjaincs](https://github.com/pulkitjaincs)
 - 💼 LinkedIn: [@pulkitjaincs](https://linkedin.com/in/pulkitjaincs)
 - 📧 Email: pulkitjain.cse@gmail.com
->>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 
 ---
 
@@ -326,13 +183,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ **Star this repository if you found it helpful!**
 
-<<<<<<< HEAD
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/newsapp?style=social)](https://github.com/yourusername/newsapp/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/newsapp?style=social)](https://github.com/yourusername/newsapp/network/members)
-=======
 [![GitHub stars](https://img.shields.io/github/stars/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/network/members)
->>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 
 *Built with ❤️ using React*
 
