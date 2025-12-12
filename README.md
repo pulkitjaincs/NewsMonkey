@@ -8,27 +8,16 @@
 
 > A modern, responsive news aggregation application built with React. Features infinite scroll, real-time loading indicators, and category-based news browsing.
 
-## 🌐 Live Demo
-
-**[🚀 View Live Application](https://pulkirjaincs.github.io/NewsMonkey)**
-
-## 📸 Screenshots
-
-| Desktop View | Mobile View |
-|--------------|-------------|
-| ![Desktop](https://via.placeholder.com/600x400/007bff/ffffff?text=Desktop+View) | ![Mobile](https://via.placeholder.com/300x400/28a745/ffffff?text=Mobile+View) |
 
 ## ✨ Key Features
 
 - **📱 Responsive Design**: Fully responsive layout that works seamlessly across all devices
 - **🔄 Infinite Scroll**: Smooth infinite scrolling for seamless news browsing
-- **⚡ Smart Caching**: Session-based caching to minimize API calls and ensure instant navigation
-- **🔖 Bookmarks**: "Read Later" functionality with persistent storage for your favorite articles
-- **🔗 Social Sharing**: Native sharing integration to easily share articles via WhatsApp, Twitter, etc.
-- **🌗 Dark Mode**: Premium dark mode support with system preference detection
+- **⚡ Real-time Loading**: Dynamic loading bars and spinners for enhanced UX
 - **📂 Category Navigation**: Browse news by categories (Business, Technology, Sports, Science, Health, Entertainment)
 - **🌍 Multi-country Support**: Currently configured for Indian news with easy country switching
-- **🎨 Modern Premium UI**: Glassmorphism aesthetics, smooth animations, and polished typography
+- **🎨 Modern UI**: Clean, Bootstrap-powered interface with card-based news layout
+- **🔗 External Links**: Direct links to original news sources
 - **📊 Progress Tracking**: Visual progress indicators during data fetching
 
 ## 🛠️ Tech Stack
@@ -205,21 +194,20 @@ const updateNews = async () => {
 
 ## 🚀 Deployment
 
-### Vercel Deployment (Recommended)
-The easiest way to deploy is using Vercel:
-
-1. Push your code to a GitHub repository.
-2. Log in to [Vercel](https://vercel.com/) and click "Add New Project".
-3. Import your repository. Vercel will automatically detect Vite/React.
-4. Click **Deploy**.
-
-*Note: A `vercel.json` file is included to handle client-side routing.*
-
 ### GitHub Pages Deployment
-1. Update `homepage` in `package.json`.
-2. Run deployment script:
 ```bash
+# Build and deploy to GitHub Pages
+npm run build
 npm run deploy
+```
+
+### Manual Deployment
+```bash
+# Build for production
+npm run build
+
+# Deploy build folder to your hosting service
+# Upload the contents of build/ folder to your web server
 ```
 
 ## 📈 Performance Optimizations
@@ -235,10 +223,8 @@ npm run deploy
 ## 🔮 Roadmap
 
 - [ ] 🔍 Search functionality
-- [x] 🌙 Dark mode toggle
-- [x] 📌 Bookmark/save articles
-- [x] ⚡ Smart Caching
-- [x] 🔗 Social Sharing
+- [ ] 🌙 Dark mode toggle
+- [ ] 📌 Bookmark/save articles
 - [ ] ⚙️ User preferences
 - [ ] 🔔 Push notifications
 - [ ] 📱 Offline support with PWA
@@ -265,16 +251,12 @@ git commit -m "Add: your feature description"
 git push origin feature/your-feature-name
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 **Your Name**
-- 🌐 GitHub: [@yourusername](https://github.com/yourusername)
-- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- 📧 Email: your.email@example.com
+- 🌐 GitHub: [@pulkitjaincs](https://github.com/pulkitjaincs)
+- 💼 LinkedIn: [@pulkitjaincs](https://linkedin.com/in/pulkitjaincs)
+- 📧 Email: pulkitjain.cse@gmail.com
 
 ---
 
@@ -282,8 +264,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ **Star this repository if you found it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/newsapp?style=social)](https://github.com/yourusername/newsapp/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/newsapp?style=social)](https://github.com/yourusername/newsapp/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/network/members)
 
 *Built with ❤️ using React*
 
