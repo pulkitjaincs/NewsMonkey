@@ -8,16 +8,38 @@
 
 > A modern, responsive news aggregation application built with React. Features infinite scroll, real-time loading indicators, and category-based news browsing.
 
+<<<<<<< HEAD
+## 🌐 Live Demo
+
+**[🚀 View Live Application](https://pulkirjaincs.github.io/NewsMonkey)**
+
+## 📸 Screenshots
+
+| Desktop View | Mobile View |
+|--------------|-------------|
+| ![Desktop](https://via.placeholder.com/600x400/007bff/ffffff?text=Desktop+View) | ![Mobile](https://via.placeholder.com/300x400/28a745/ffffff?text=Mobile+View) |
+=======
+>>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 
 ## ✨ Key Features
 
 - **📱 Responsive Design**: Fully responsive layout that works seamlessly across all devices
 - **🔄 Infinite Scroll**: Smooth infinite scrolling for seamless news browsing
+<<<<<<< HEAD
+- **⚡ Smart Caching**: Session-based caching to minimize API calls and ensure instant navigation
+- **🔖 Bookmarks**: "Read Later" functionality with persistent storage for your favorite articles
+- **🔗 Social Sharing**: Native sharing integration to easily share articles via WhatsApp, Twitter, etc.
+- **🌗 Dark Mode**: Premium dark mode support with system preference detection
+- **📂 Category Navigation**: Browse news by categories (Business, Technology, Sports, Science, Health, Entertainment)
+- **🌍 Multi-country Support**: Currently configured for Indian news with easy country switching
+- **🎨 Modern Premium UI**: Glassmorphism aesthetics, smooth animations, and polished typography
+=======
 - **⚡ Real-time Loading**: Dynamic loading bars and spinners for enhanced UX
 - **📂 Category Navigation**: Browse news by categories (Business, Technology, Sports, Science, Health, Entertainment)
 - **🌍 Multi-country Support**: Currently configured for Indian news with easy country switching
 - **🎨 Modern UI**: Clean, Bootstrap-powered interface with card-based news layout
 - **🔗 External Links**: Direct links to original news sources
+>>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 - **📊 Progress Tracking**: Visual progress indicators during data fetching
 
 ## 🛠️ Tech Stack
@@ -194,6 +216,25 @@ const updateNews = async () => {
 
 ## 🚀 Deployment
 
+<<<<<<< HEAD
+### Vercel Deployment (Recommended)
+The easiest way to deploy is using Vercel:
+
+1. Push your code to a GitHub repository.
+2. Log in to [Vercel](https://vercel.com/) and click "Add New Project".
+3. Import your repository. Vercel will automatically detect Vite/React.
+4. Click **Deploy**.
+
+*Note: A `vercel.json` file is included to handle client-side routing.*
+
+### GitHub Pages Deployment
+1. Update `homepage` in `package.json`.
+2. Run deployment script:
+```bash
+npm run deploy
+```
+
+=======
 ### GitHub Pages Deployment
 ```bash
 # Build and deploy to GitHub Pages
@@ -210,6 +251,7 @@ npm run build
 # Upload the contents of build/ folder to your web server
 ```
 
+>>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 ## 📈 Performance Optimizations
 
 | Optimization | Implementation |
@@ -223,8 +265,15 @@ npm run build
 ## 🔮 Roadmap
 
 - [ ] 🔍 Search functionality
+<<<<<<< HEAD
+- [x] 🌙 Dark mode toggle
+- [x] 📌 Bookmark/save articles
+- [x] ⚡ Smart Caching
+- [x] 🔗 Social Sharing
+=======
 - [ ] 🌙 Dark mode toggle
 - [ ] 📌 Bookmark/save articles
+>>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 - [ ] ⚙️ User preferences
 - [ ] 🔔 Push notifications
 - [ ] 📱 Offline support with PWA
@@ -251,12 +300,25 @@ git commit -m "Add: your feature description"
 git push origin feature/your-feature-name
 ```
 
+<<<<<<< HEAD
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Your Name**
+- 🌐 GitHub: [@yourusername](https://github.com/yourusername)
+- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- 📧 Email: your.email@example.com
+=======
 ## 👨‍💻 Author
 
 **Your Name**
 - 🌐 GitHub: [@pulkitjaincs](https://github.com/pulkitjaincs)
 - 💼 LinkedIn: [@pulkitjaincs](https://linkedin.com/in/pulkitjaincs)
 - 📧 Email: pulkitjain.cse@gmail.com
+>>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 
 ---
 
@@ -264,8 +326,13 @@ git push origin feature/your-feature-name
 
 ⭐ **Star this repository if you found it helpful!**
 
+<<<<<<< HEAD
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/newsapp?style=social)](https://github.com/yourusername/newsapp/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/newsapp?style=social)](https://github.com/yourusername/newsapp/network/members)
+=======
 [![GitHub stars](https://img.shields.io/github/stars/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/network/members)
+>>>>>>> 73270b67da3d81ff36a1362abe6c5ceec198c7ad
 
 *Built with ❤️ using React*
 
