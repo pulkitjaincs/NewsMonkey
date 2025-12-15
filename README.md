@@ -1,16 +1,16 @@
-# 📰 NewsMonkey
+# 📰 inBrief
 
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.0-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![NewsAPI](https://img.shields.io/badge/API-NewsAPI-FF6B6B?style=for-the-badge)](https://newsapi.org/)
-[![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pulkirjaincs.github.io/NewsMonkey)
+[![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://pulkirjaincs.github.io/inBrief)
 
 > A modern, responsive news aggregation application built with React. Features infinite scroll, real-time loading indicators, and category-based news browsing.
 
 ## 🌐 Live Demo
 
-**[🚀 View Live Application](https://pulkirjaincs.github.io/NewsMonkey)**
+**[🚀 View Live Application](https://pulkirjaincs.github.io/inBrief)**
 
 ## 📸 Screenshots
 
@@ -55,8 +55,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/pulkitjaincs/NewsMonkey.git
-cd NewsMonkey
+git clone https://github.com/pulkitjaincs/inBrief.git
+cd inBrief
 
 # Install dependencies
 npm install
@@ -80,7 +80,7 @@ npm run dev
 ## 📁 Project Structure
 
 ```
-newsapp/
+inBrief/
 ├── public/
 │   ├── index.html
 │   └── manifest.json
@@ -183,8 +183,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ **Star this repository if you found it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/pulkitjaincs/NewsMonkey?style=social)](https://github.com/pulkitjaincs/NewsMonkey/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/pulkitjaincs/inBrief?style=social)](https://github.com/pulkitjaincs/inBrief/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/pulkitjaincs/inBrief?style=social)](https://github.com/pulkitjaincs/inBrief/network/members)
 
 *Built with ❤️ using React*
 

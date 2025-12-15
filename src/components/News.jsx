@@ -66,7 +66,7 @@ const News = (props) => {
     }
   }
   useEffect(() => {
-    document.title = `${props.category.charAt(0).toUpperCase() + props.category.slice(1)} - NewsMonkey`;
+    document.title = `${props.category.charAt(0).toUpperCase() + props.category.slice(1)} - inBrief`;
     updateNews();
     // eslint-disable-next-line
   }, []);
@@ -103,7 +103,7 @@ const News = (props) => {
   return (
     <div className="container my-3">
       <h1 className="text-center fw-bold" style={{ margin: "35px 0px", marginTop: "90px", color: 'var(--text-primary)' }}>
-        NewsMonkey - Top {props.category} Headlines
+        inBrief - Top {props.category} Headlines
       </h1>
       {error && <div className="alert alert-danger">{error}</div>}
       {loading && <Spinner />}

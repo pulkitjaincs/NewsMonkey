@@ -1,6 +1,6 @@
 {
-  "homepage": "https://pulkirjaincs.github.io/NewsMonkey",
-  "name": "newsapp",
+  "homepage": "https://pulkirjaincs.github.io/inBrief",
+  "name": "inbrief",
   "version": "0.1.0",
   "type": "module",
   "private": true,
