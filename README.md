@@ -10,13 +10,8 @@
 
 ## 🌐 Live Demo
 
-**[🚀 View Live Application](https://pulkirjaincs.github.io/inBrief)**
+**[🚀 View Live Application](https://in-brief-three.vercel.app/)**
 
-## 📸 Screenshots
-
-| Desktop View | Mobile View |
-|--------------|-------------|
-| ![Desktop](https://via.placeholder.com/600x400/007bff/ffffff?text=Desktop+View) | ![Mobile](https://via.placeholder.com/300x400/28a745/ffffff?text=Mobile+View) |
 
 ## ✨ Key Features
 
@@ -153,8 +148,8 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ### Quick Start for Contributors
 ```bash
 # Fork and clone the repository
-git clone https://github.com/pulkitjaincs/NewsMonkey.git
-cd NewsMonkey
+git clone https://github.com/pulkitjaincs/inBrief.git
+cd inBrief
 
 # Create a new branch
 git checkout -b feature/your-feature-name
@@ -166,9 +161,6 @@ git commit -m "Add: your feature description"
 git push origin feature/your-feature-name
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
